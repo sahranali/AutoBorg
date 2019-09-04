@@ -18,7 +18,7 @@ import asyncio
 
 
 
-@borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
+@borg.on(admin_cmd("callban"))
 
 async def _(event):
 
