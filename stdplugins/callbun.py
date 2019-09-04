@@ -18,7 +18,7 @@ import asyncio
 
 
 
-@borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
+@borg.on(admin_cmd("call"))
 
 async def _(event):
 
