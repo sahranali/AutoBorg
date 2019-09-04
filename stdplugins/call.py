@@ -18,7 +18,7 @@ import asyncio
 
 
 
-@borg.on(admin_cmd("callban"))
+@borg.on(admin_cmd(pattern="call ?(.*)", allow_sudo=True))
 
 async def _(event):
 
