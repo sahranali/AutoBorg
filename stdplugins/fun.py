@@ -55,6 +55,7 @@ GEY_STRINGS = [
 PRO_STRINGS = [
      "`This gey is pro as phack.`",
      "`Pros here -_- Time to Leave`",
+     "`Pru ..... AF Sirji`",
 ]
 INSULT_STRINGS = [ 
     "`Owww ... Such a stupid idiot.`",
