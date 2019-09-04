@@ -50,7 +50,7 @@ async def _(event):
             "`Forking Uniborg... 84%\n\n⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬜️⬜️\n\nFile Size: 100.7 MiB / 108.7 MiB `",
             "`Forking Uniborg... 100%\n\n⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️\n\nFile Size: 108.7 MiB / 108.7 MiB\n\nTask Completed... `",
             "`Fork Deploying...`\n\n@UniBorg ( `Custom Built By` @iamomkarofficial ) \n`Verified Account:` ☑️\n`Official Website:` N/A\n\n`Python` `Loading...`\n[GCC 7.3.0]\n`Telethon` `Loading...`\n\n`Custom Built Fork:` `Loading...`",
-            "`Fork Deployed...`\n\n@UniBorg ( `Custom Built By` @iamomkaeofficial ) \n`Verified Account:` ✅\n`Official Website:` N/A\n\n`Python` 3.6.8 (default, Jan 29 2019, 19:35:16)\n[GCC 7.3.0]\n`Telethon` 1.8.0\n\n`Custom Built Fork:` https://github.com/Omkar47/Autoborg"
+            "`Fork Deployed...`\n\n@UniBorg ( `Custom Built By` @iamomkarofficial ) \n`Verified Account:` ✅\n`Official Website:` N/A\n\n`Python` 3.6.8 (default, Jan 29 2019, 19:35:16)\n[GCC 7.3.0]\n`Telethon` 1.8.0\n\n`Custom Built Fork:` https://github.com/Omkar47/Autoborg"
         ]
 
         for i in animation_ttl:
