@@ -18,7 +18,7 @@ import asyncio
 
 
 
-@borg.on(admin_cmd(pattern="call ?(.*)", allow_sudo=True))
+@borg.on(admin_cmd(.call))
 
 async def _(event):
 
