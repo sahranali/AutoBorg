@@ -1,6 +1,6 @@
 #Warning: Use this repo at your own risk
 
-Click on Below Photo To Deploy Bot
+Click on Below Photo To Deploy Bot To Heroku 
 
 [![Deploy](https://telegra.ph/file/36fe99a0eb564de401e0e.png)](https://heroku.com/deploy)
 
