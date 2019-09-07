@@ -1,3 +1,5 @@
+"""COMMAND : .info, .dc, .autoborg"""
+
 import sys
 from telethon import events, functions, __version__
 from uniborg.util import admin_cmd
@@ -55,9 +57,7 @@ async def _(event):
     
     
     
-    
-    
-    @borg.on(admin_cmd(pattern="autoborg (.*)"))
+@borg.on(admin_cmd(pattern="autoborg (.*)"))
 async def _(event):
     if event.fwd_from:
         return
