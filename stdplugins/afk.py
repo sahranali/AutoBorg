@@ -107,9 +107,9 @@ async def on_afk(event):
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
         message_to_reply = f"`I'll reply soon. I need some time alone (This is an automated message, so everyone who sends me a message will see this, not just you)`" + \
-            f"\n\n__I promise I'll back in a few hours:__ {reason}" \
+            f"\n\n__I promise I'll back in a few hours\n\n__REASON:__ {reason}" \
             if reason \
-            else f"RIP.......n\n**Important Notice**\n\n[This User Is Ded Forever...](https://telegra.ph//file/a53fa950ff31781d5930a.jpg) "
+            else f"RIP.......\n\n**Important Notice**\n\n[This User Is Ded Forever...](https://telegra.ph//file/a53fa950ff31781d5930a.jpg) "
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
         if event.chat_id in borg.storage.last_afk_message:  # pylint:disable=E0602
