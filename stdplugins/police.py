@@ -1,7 +1,7 @@
 """Emoji
 Available Commands:
 .police
-if u edit it then u r gay"""
+if u edit it then u r pru"""
 
 from telethon import events
 
@@ -42,7 +42,7 @@ async def _(event):
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
             "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-            "[**Police iz Here**](t.me@iamomkarofficial)"
+            "**[Police iz Here](t.me@iamomkarofficial)**"
 
  ]
 
