@@ -17,6 +17,7 @@ async def _(event):
     help_string = """@UniBorg ( **Custom Built By** @iamomkarofficial ) \n**Verified Account**: ✅\n**Official Website**: N/A
 Pithun {}
 Talethrun {}
+
 **Custom Built Fork**: https://github.com/Omkar47/AutoBorg""".format(
         sys.version,
         __version__
@@ -54,7 +55,6 @@ async def _(event):
     result = result.stringify()
     logger.info(result)  # pylint:disable=E0602
     await event.edit("""Telethon UserBot powered by @UniBorg""")
-    
     
     
 @borg.on(admin_cmd(pattern="autoborg (.*)"))
