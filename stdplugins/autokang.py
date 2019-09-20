@@ -1,8 +1,8 @@
 """Make / Download Telegram Sticker Packs without installing Third Party applications
 Available Commands:
-.autoborg [Optional Emoji]
-.packinfo
-.getsticker"""
+.autokang [Optional Emoji]
+.autoinfo
+.autoget"""
 from telethon import events
 from io import BytesIO
 from PIL import Image
@@ -29,7 +29,7 @@ from telethon.tl.types import (
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd("autoborg ?(.*)"))
+@borg.on(admin_cmd("autokang ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -120,7 +120,7 @@ async def _(event):
     await event.edit(f"Sticker is added to [Your pack](t.me/addstickers/{packshortname})")
 
 
-@borg.on(admin_cmd("packinfo"))
+@borg.on(admin_cmd("autoinfo"))
 async def _(event):
     if event.fwd_from:
         return
@@ -156,7 +156,7 @@ async def _(event):
                      f"**Emojis In Pack:** {' '.join(pack_emojis)}")
 
 
-@borg.on(admin_cmd("getsticker ?(.*)"))
+@borg.on(admin_cmd("autoget ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
