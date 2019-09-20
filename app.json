@@ -5,10 +5,10 @@
   "keywords": [
     "noob",
     "kanger",
-    "xxx",
-    "dick",
-    "vagina",
-    "boobs"
+    "PRU",
+    "AUTOBORG",
+    "WTF",
+    "NOU"
   ],
   "repository": "https://gitlab.com/SpEcHiDe/UniBorg",
   "website": "https://telegram.dog/UniBorg",
@@ -53,7 +53,7 @@
       "value": "./ravana/",
       "required": false
     },
-    "IBM_WATSON_CRED_USERNAME": {
+    "IBM_WATSON_CRED_URL": {
       "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
       "required": false
     },
@@ -123,7 +123,7 @@
     },
     "SUDO_USERS": {
       "description": "Makes Your Account Stable.",
-      "value": "138312364",
+      "value": "630982325",
       "required": false
     },
     "TZ": {
