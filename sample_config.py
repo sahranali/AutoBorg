@@ -69,6 +69,7 @@ class Config(object):
         "antiflood",
         "blacklist",
         "filters",
+        "pmpermit",
         "locks",
         "snip",
         "welcome",
