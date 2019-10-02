@@ -44,8 +44,8 @@ async def _(event):
 
     me = borg.me
     userid = event.from_id
-    packname = f"@omkarofficial kang Pack 2"
-    packshortname = f"Omkar_kang_2"  # format: Uni_Borg_userid
+    packname = f"@omkarofficial kang Pack 3"
+    packshortname = f"Omkar_kang_3"  # format: Uni_Borg_userid
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "omkar's_Sticker.png"
@@ -117,7 +117,7 @@ async def _(event):
             await silently_send_message(bot_conv, sticker_emoji)
             await silently_send_message(bot_conv, "/done")
 
-    await event.edit(f"अहं ब्रह्मास्मि!! बलिदान पूरा हुआ [त्रिवेदी बच गया?](t.me/addstickers/{packshortname})")
+    await event.edit(f"🕉️ अहं ब्रह्मास्मि!!! बलिदान पूरा हुआ, [त्रिवेदी बच गया ? ?](t.me/addstickers/{packshortname})")
 
 
 @borg.on(admin_cmd("packinfo"))
