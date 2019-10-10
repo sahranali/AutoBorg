@@ -1,5 +1,5 @@
 """Download & Upload Images on Telegram
-Syntax: .img <Name>"""
+Syntax: .simg <Name>"""
 
 
 from google_images_download import google_images_download
@@ -9,7 +9,7 @@ from re import findall
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd("img ?(.*)"))
+@borg.on(admin_cmd("simg ?(.*)"))
 async def img_sampler(event):
     await event.edit("Processing...")
     query = event.pattern_match.group(1)
