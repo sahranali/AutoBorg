@@ -119,7 +119,7 @@ async def show_all(event):
 		await event.edit("`Output is huge. Sending as a file...`")
 		with open(output,'w') as f:
 			f.write(msg)
-		await asyncio.sleep(2)	
+		await asyncio.sleep(10)	
 		await event.delete()	
 		await borg.send_file(
 			event.chat_id,
