@@ -106,7 +106,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     error_message = e_response.replace("please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.", "")
                     # throw error
                     result = builder.article(
-                        "YTDL Errors  @AutoBorg",
+                        "YTDL Errors @AutoBorg",
                         text=f"{error_message} Powered by @AutoBorg",
                         link_preview=False
                     )
@@ -183,7 +183,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             )
                         ])
                     result = builder.article(
-                        "YouTube © @AutoBorg",
+                        "YouTube @AutoBorg",
                         text=f"{ytdl_url} Powered by @AutoBorg",
                         buttons=inline_keyboard,
                         link_preview=True
