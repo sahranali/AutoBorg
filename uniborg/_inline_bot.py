@@ -66,11 +66,11 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == borg.uid and query.startswith("@UniBorg"):
+        if event.query.user_id == borg.uid and query.startswith("@AutoBorg"):
             rev_text = query[::-1]
             buttons = paginate_help(0, borg._plugins, "helpme")
             result = builder.article(
-                "© @UniBorg",
+                " @AutoBorg",
                 text="{}\nℂ𝕦𝕣𝕣𝕖𝕟𝕥𝕝𝕪 𝕃𝕠𝕒𝕕𝕖𝕕 ℙ𝕝𝕦𝕘𝕚𝕟𝕤: {}".format(
                     query, len(borg._plugins)),
                 buttons=buttons,
@@ -106,8 +106,8 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     error_message = e_response.replace("please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.", "")
                     # throw error
                     result = builder.article(
-                        "YTDL Errors © @UniBorg",
-                        text=f"{error_message} Powered by @UniBorg",
+                        "YTDL Errors  @AutoBorg",
+                        text=f"{error_message} Powered by @AutoBorg",
                         link_preview=False
                     )
                 elif t_response:
@@ -183,14 +183,14 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             )
                         ])
                     result = builder.article(
-                        "YouTube © @UniBorg",
-                        text=f"{ytdl_url} powered by @UniBorg",
+                        "YouTube © @AutoBorg",
+                        text=f"{ytdl_url} Powered by @AutoBorg",
                         buttons=inline_keyboard,
                         link_preview=True
                     )
         else:
             result = builder.article(
-                "© @UniBorg",
+                "@AutoBorg",
                 text="""@iamomkarofficial **( Custom Built By** Omkar **)** 
 **Verified Account:** ✅
 **Official Website:** N/A
@@ -202,12 +202,12 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 **Custom Built Fork:** https://github.com/Omkar47/AutoBorg""",
                 buttons=[
                     [custom.Button.url("👤Contact Creator👤", "https://telegram.dog/iamomkarofficial"), custom.Button.url(
-                        "📼Ravana Audio Memes📼", "https://t.me/tgaudiomemes")],
+                        "📼Audio Memes📼", "tg://This isn't fackbook or insta.")],
                     [custom.Button.url("👨‍💻Source Code👨‍💻", "https://github.com/Omkar47/AutoBorg"), custom.Button.url(
                         "❕❗Deploy Me❗❕", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FOmkar47%2FAutoBorg&template=https%3A%2F%2Fgithub.com%2FOmkar47%2FAutoBorg")],
                     [custom.Button.url("🔰Update Fork🔰", "tg://need_update_for_some_feature"), custom.Button.url(
                         "✳️Fork Boost✳️", "tg://some_unsupported_feature"), custom.Button.url(
-                        "♻️Refresh Heroku♻️", "tg://chutiya")]
+                        "♻️Refresh Heroku♻️", "tg://Nahh Nahi Hoga")]
                 ],
                 link_preview=False
             )
@@ -244,7 +244,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Please get your own @UniBorg, and don't edit my messages!"
+            reply_pop_up_alert = "Please get your own @AutoBorg, and don't edit my messages!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -258,7 +258,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         reply_pop_up_alert = help_string if help_string is not None else \
             "No DOCSTRING has been setup for {} plugin".format(plugin_name)
         reply_pop_up_alert += "\n\n Use .unload {} to remove this plugin\n\
-            © @UniBorg".format(plugin_name)
+            @AutoBorg".format(plugin_name)
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
