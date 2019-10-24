@@ -14,9 +14,9 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = "****:"
-    help_string = """@UniBorg ( **Custom Built By** @iamomkarofficial ) \n**Verified Account**: ✅\n**Official Website**: N/A
-Pithun {}
-Talethrun {}
+    help_string = """@AutoBorg ( **Custom Built By** @iamomkarofficial ) \n**Verified Account**: ✅\n**Official Website**: N/A
+Python {}
+Telethon {}
 
 **Custom Built Fork**: https://github.com/Omkar47/AutoBorg""".format(
         sys.version,
