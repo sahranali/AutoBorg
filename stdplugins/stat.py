@@ -1,5 +1,5 @@
 """Count the Number of Dialogs you have in your Telegram Account
-Syntax: .count"""
+Syntax: .stat"""
 from telethon import events
 import asyncio
 from datetime import datetime
@@ -35,7 +35,7 @@ async def _(event):
             logger.info(d.stringify())
     end = datetime.now()
     ms = (end - start).seconds
-    await event.edit(""" [Deleted Account](tg://user?id=689811472) stats obtained in {} seconds..\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    await event.edit(""" Stats obtained in {} seconds..\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Users:\t{}
 Groups:\t{}
 Super Groups:\t{}
