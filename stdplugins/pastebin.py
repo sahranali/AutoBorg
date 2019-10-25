@@ -51,4 +51,4 @@ async def _(event):
         nurl = f"https://del.dog/v/{r['key']}"
         await event.edit("Dogged to {} in {} seconds. GoTo Original URL: {}".format(url, ms, nurl))
     else:
-        await event.edit("[Content pated]({})\n\n__Link Generated In__ **69** __seconds__".format(url, ms))
+        await event.edit("[Content pated]({})\n\nLink Generated In **69** seconds.".format(url, ms))
