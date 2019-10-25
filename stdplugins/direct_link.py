@@ -104,7 +104,7 @@ def gdrive(url: str) -> str:
         if 'accounts.google.com' in dl_url:
             reply += 'Link is not public!'
             return reply
-    reply += f'[{name}]({dl_url})\n'
+    reply += f'Direct Link of Gdrive[{name}]({dl_url})\n'
     return reply
 
 
