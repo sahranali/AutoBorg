@@ -117,7 +117,7 @@ async def _(event):
             await silently_send_message(bot_conv, sticker_emoji)
             await silently_send_message(bot_conv, "/done")
 
-    await event.edit(f"🕉️ अहं ब्रह्मास्मि!!! बलिदान पूरा हुआ, [त्रिवेदी बच गया ? ?](t.me/addstickers/{packshortname})")
+    await event.edit(f"अहं ब्रह्मास्मि!! बलिदान पूरा हुआ, [त्रिवेदी बच गया  ?](t.me/addstickers/{packshortname})")
 
 
 @borg.on(admin_cmd("packinfo"))
