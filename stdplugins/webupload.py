@@ -30,7 +30,7 @@ async def _(event):
 		"filebin": "curl -X POST --data-binary \"@{full_file_path}\" -H \"filename: {bare_local_name}\" \"https://filebin.net\"",
 		"anonymousfiles": "curl -F file=\"@{full_file_path}\" https://api.anonymousfiles.io/",
 		"megaupload": "curl -F \"file=@{full_file_path}\" https://megaupload.is/api/upload",
-		"bayfiles": ".exec curl -F \"file=@{full_file_path}\" https://bayfiles.com/api/upload"
+		"bayfiles": "curl -F \"file=@{full_file_path}\" https://bayfiles.com/api/upload"
 	}
 	filename = os.path.basename(file_name)
 	try:
