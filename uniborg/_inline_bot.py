@@ -43,6 +43,7 @@ async def _(event):
 ))
 async def _(event):
     if event.fwd_from:
+       await event.delete()
         return
     bot_username = event.pattern_match.group(1)
     i_plus_oneth_result = event.pattern_match.group(2)
@@ -52,8 +53,7 @@ async def _(event):
             bot_username,
             search_query
         )
-        message = await bot_results[int(i_plus_oneth_result) - 1].click(event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True)
-           await event.delete()
+        message = await bot_results[int(i_plus_oneth_result) - 1].click(event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True)           
     except Exception as e:
         await event.edit(str(e))
 
